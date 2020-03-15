@@ -5,11 +5,10 @@ class PaypalGateway < PaymentGateway
   end
 
   def checkout
+    # add checkout code
+  end
 
-def format(data)
-   return "" if data.empty?
-
-   result = data.keys.join("\t") + "\n"
-   result += data.values.join("\t") + "\n"
- end
+  def validate
+    #add validate of payment code
+  end
 end
